@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directorio de Contactos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1 class="card__title">Directorio de Contactos</h1>
+
+      <!-- Formulario para agregar contacto -->
+      <form id="contact-form" autocomplete="off">
+        <input
+          type="text"
+          id="name-input"
+          class="input"
+          placeholder="Nombre"
+        />
+        <input
+          type="tel"
+          id="phone-input"
+          class="input"
+          placeholder="Teléfono"
+        />
+        <button type="submit" id="add-btn" class="btn-primary">Agregar</button>
+      </form>
+
+      <!-- Buscador -->
+      <input
+        type="text"
+        id="search-input"
+        class="input"
+        placeholder="Buscar contacto por nombre..."
+      />
+
+      <!-- Lista de contactos (se llena con JavaScript) -->
+      <ul id="contact-list" class="contact-list"></ul>
+
+      <!-- Mensaje cuando no hay contactos -->
+      <p id="empty-message" class="empty-message">
+        Todavia no agregaste contactos.
+      </p>
+
+      <!-- Línea divisoria y contador -->
+      <hr class="divider" />
+      <p class="counter">Contactos: <span id="counter">0</span></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
